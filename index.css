@@ -1,0 +1,34 @@
+/* Global scrollbar and studio typography helpers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.studio-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.studio-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.studio-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(113, 113, 122, 0.25);
+  border-radius: 9999px;
+}
+
+.dark .studio-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(161, 161, 170, 0.25);
+}
+
+.google-gradient-bar {
+  background: linear-gradient(90deg, #1A73E8, #EA4335, #FBBC04, #34A853, #1A73E8);
+  background-size: 200% 100%;
+  animation: googleBar 2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .google-gradient-bar {
+    animation: none;
+  }
+}
